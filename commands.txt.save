@@ -1,0 +1,6 @@
+cd TokenandSymbolTableGeneration && lex phase1.l && gcc lex.yy.c && ./a.out < test_input.cpp
+
+
+cd SyntaxParser && lex lexical.l && yacc -d gram.y && gcc lex.yy.c y.tab.c && ./a.out < input.cpp
+
+
